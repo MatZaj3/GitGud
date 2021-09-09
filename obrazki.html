@@ -4,19 +4,23 @@
 <script language="JavaScript">
 function WinOpen_zajp1()
 {
-window.open("p1.jpg","p1","toolbar=no,directories=no,menubar=no,height=200,width=200,top=400,left=250");
+window.open("p1.html","p1","toolbar=no,directories=no,menubar=no,height=200,width=200,top=400,left=250");
 }
 function WinOpen_zajp2()
 {
-window.open("p2.jpg","p2","toolbar=no,directories=no,menubar=no,height=200,width=200,top=400,left=500");
+window.open("p2.html","p2","toolbar=no,directories=no,menubar=no,height=200,width=200,top=400,left=500");
 }
 function WinOpen_zajp3()
 {
-window.open("p3.jpg","p3","toolbar=no,directories=no,menubar=no,height=200,width=200,top=400,left=750");
+window.open("p3.html","p3","toolbar=no,directories=no,menubar=no,height=200,width=200,top=400,left=750");
 }
 function WinOpen_zajp4()
 {
-window.open("p4.jpg","p4","toolbar=no,directories=no,menubar=no,height=200,width=200,top=400,left=1000");
+window.open("p4.html","p4","toolbar=no,directories=no,menubar=no,height=200,width=200,top=400,left=1000");
+}
+function okno_zamknij_zaj()
+{
+window.close()
 }
 </script>
 </head>
@@ -26,6 +30,7 @@ window.open("p4.jpg","p4","toolbar=no,directories=no,menubar=no,height=200,width
 <input type="button" name="przycisk" value="konflikt" onclick="WinOpen_zajp2(' ')">
 <input type="button" name="przycisk" value="good ending" onclick="WinOpen_zajp3(' ')">
 <input type="button" name="przycisk" value="bad ending" onclick="WinOpen_zajp4(' ')">
+<input type="button" value="zamknij okno" onclick="okno_zamknij_zaj()"/>
 </form>
 </body>
 </html>
