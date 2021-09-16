@@ -1,0 +1,23 @@
+<html>
+<body>
+<div style="color:green;font-size:50px;">
+ <script language="JavaScript">
+var d1_zaj=prompt("dzien1=","");
+var d2_zaj=prompt("dzien2=","");
+var suma;
+ var a=parseFloat(d1_zaj);
+ var b=parseFloat(d2_zaj);
+ dnio=d2_zaj - d1_zaj;
+ seco= dnio * 86400;
+ document.write("miedzy "+a+" ,a "+b+" stycznia minelo "+seco+" sekund (od polnocy do polnocy)<br>");
+  function okno_zamknij_zaj()
+{
+window.close()
+}
+ </script>
+</div>
+<form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_zaj()"/>
+</form>
+</body>
+</html>

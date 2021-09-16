@@ -1,0 +1,26 @@
+<html>
+<head>
+<script type="text/javascript"> 
+ function okno_zamknij_zaj()
+{
+window.close()
+}</script>
+</head>
+<body>
+
+<b> Rodzaje okienek: </b> <br>
+ Okienko <b> alert </b> – wyświetlająca okienko dialogowe z informacją i przyciskiem OK, <br>
+ Okienko <b> prompt </b> – generująca okno, w którym użytkownik może wpisać wartość, zwracaną
+następnie do programu. <br>
+ Okienko <b> confirm </b> służy do tego, aby użytkownik coś potwierdził (stąd nazwa confirm). <br>
+<b> Konwersji liczb </b>. <br>
+Wczytanie zmiennej z użyciem <b> prompt </b> wykonywane jest jako ciąg znaków dlatego konieczna jest
+konwersji z ciągu znaków na wartości liczbowe aby wykonywac obliczenia. <br>
+<u> parseFloat </u>(zmienna) - konwersja zmiennej do typu float <br>
+<u> parseInt </u>(zmienna) - konwersja zmiennej do typu int (liczbowego) <br>
+<u> toString </u>(zmienna) - konwersja zmiennej do typu łańcuchowego <br>
+<form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_zaj()"/>
+</form>
+</body>
+</html>
