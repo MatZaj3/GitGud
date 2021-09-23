@@ -1,0 +1,22 @@
+<html>
+<body>
+<div style="color:green;font-size:50px;">
+ <script language="JavaScript">
+var a_zaj=prompt("podaj A=","");
+var b_zaj=prompt("podaj B=","");
+var a=parseFloat(a_zaj);
+var b=parseFloat(b_zaj);
+ document.write("wczytane liczby:" + a + " i " + b + " i wedlug wzoru:(" +a + " + " + b+ ")^3=" +a+ " ^3+3*" +a+" ^2*" +b +" + 3*" +a+"*"+ b+ "^2 + " +b+ "^3=" + (a*a*a)+" + " +(3*(a*a*b))+" + " + (3*a*b*b) +" + "+ (b*b*b)+ " =" + ((a+b)*(a+b)*(a+b)) );
+  function okno_zamknij_zaj()
+{
+window.close()
+}
+ </script>
+</div>
+<form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_zaj()"/>
+</form>
+</body>
+</html>
+
+
