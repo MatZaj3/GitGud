@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+ <head>
+ <title> Użycie fukcji </title>
+ <meta charset="utf-8">
+ </head>
+<body>
+ <div style="color:navy;font-size:50px;">
+ <script language="JavaScript">
+ var a=parseFloat(prompt("a=",""));
+ var b=parseFloat(prompt("b=",""));
+ function okno_zamknij_zaj()
+{
+window.close()
+}
+
+ function suma_zaj(a, b) {
+ return a + b;
+ }
+function minus_zaj(a, b) {
+ return a - b;
+ }
+function razy_zaj(a, b) {
+ return a * b;
+ }
+function reszta_zaj(a, b) {
+ return a % b;
+ }
+function kwadrat_zaj(a, b) {
+ return a * a;
+ }
+function kwadratb_zaj(a, b) {
+ return b * b;
+ }
+
+ document.write("suma="+suma_zaj(a,b)+" , minus=" + minus_zaj(a,b)+ ", razy=" +razy_zaj(a,b)+", reszta="+reszta_zaj(a,b)+"kwadrat a="+kwadrat_zaj(a,b)+" i b="+kwadratb_zaj(a,b));
+<input type="button" value="zamknij okno" onclick="okno_zamknij_zaj()"/>
+</script>
+</div>
+</body>
+</html>

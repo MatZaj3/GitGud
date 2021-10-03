@@ -1,0 +1,44 @@
+
+
+<html>
+<head>
+</head>
+<body>
+<script language="JavaScript">
+ function okno_zamknij_zaj()
+{
+window.close()
+}
+</script>
+<textarea rows="30" cols="130">
+<html>
+<body>
+<div style="color:green;font-size:50px;">
+ <script language="JavaScript">
+var x1_zaj=prompt("podaj x1=","");
+var x2_zaj=prompt("podaj x2=","");
+var x1=parseFloat(x1_zaj);
+var x2=parseFloat(x2_zaj);
+var y1 = 3 * Math.pow(x1 , (7 / ( 7 + 2)));
+var y2 = (2* Math.cos(x1, Math.PI / 180)) + (2 * Math.sin(x1 * Math.PI / 180));
+var y3 = Math.cbrt(Math.pow(x1, 5) + (2 * Math.pow(x2, 4))) * Math.abs(x1-x2);
+ document.write("wczytane liczby:" + x1 + " i " + x2 + "  wiec y1=" + y1 + " y2=" +y2+ " i y3=" + y3 );
+  function okno_zamknij_zaj()
+{
+window.close()
+}
+ </script>
+</div>
+<form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_zaj()"/>
+</form>
+</body>
+</html>
+
+
+</textarea>
+<form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_zaj()"/>
+</form>
+</body>
+</html>
