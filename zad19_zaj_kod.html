@@ -1,0 +1,78 @@
+<html>
+<head>
+</head>
+<body>
+<script language="JavaScript">
+ function okno_zamknij_zaj()
+{
+window.close()
+}
+</script>
+<textarea rows="30" cols="130">
+
+<html>
+<head>
+<title>
+ pole i obwod prostokota
+</title>
+ <script language="JavaScript">
+function okno_zamknij_zaj()
+{
+window.close()
+}
+
+function obwod_zaj(a_zaj,b_zaj)
+{
+ a=parseFloat(a_zaj)
+ b=parseFloat(b_zaj)
+ obwod=a+b
+ document.getElementsByName('obwod')[0].value=obwod.toFixed(2); 
+ alert("obwod="+obwod.toFixed(2)); 
+ pokaz1.innerHTML="obwod="+obwod.toFixed(2)+"<br>";  
+}
+function pole_zaj(a_zaj,b_zaj)
+{
+ a=parseFloat(a_zaj)
+ b=parseFloat(b_zaj)
+ pole=a*b
+ document.getElementsByName('pole')[0].value=pole.toFixed(2);
+ alert("pole="+pole.toFixed(2));
+ pokaz2.innerHTML="pole="+pole.toFixed(2);
+}
+ </script>
+</head>
+<body>
+Pobliczanie pol i obwodu prostokota
+<br> <br>
+<form name="formularz" action="..." onsubmit="obwod_zaj(this.a_zaj.value,this.b_zaj.value);
+pole_zaj(this.a_zaj.value,this.b_zaj.value);return false">
+Podaj bok 1=
+<input size="6" name="a_zaj">
+Podaj bok 2=
+<input size="6" name="b_zaj">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+obwod=
+<input size="6" name="obwod">
+pole=
+<input size="6" name="pole">
+<input type="button" value="zamknij okno" onclick="okno_zamknij_zaj()"/>
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body>
+</html>
+
+
+</textarea>
+
+<form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_zaj()"/>
+</form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>
+ drabina
+</title>
+ <script language="JavaScript">
+function okno_zamknij_zaj()
+{
+window.close()
+}
+
+function drabina_zaj(a_zaj,b_zaj)
+{
+ a=parseFloat(a_zaj)
+ b=parseFloat(b_zaj)
+ drabina= Math.sqrt((a*a)+(b*b))
+ document.getElementsByName('drabina')[0].value=drabina.toFixed(2); 
+ alert("drabina="+drabina.toFixed(2)); 
+ pokaz1.innerHTML="drabina="+drabina.toFixed(2)+"<br>";  
+}
+function kot_zaj(a_zaj,b_zaj)
+{
+ a=parseFloat(a_zaj)
+ b=parseFloat(b_zaj)
+ kot=Math.atan(a/b) *180 / Math.PI
+ document.getElementsByName('kot')[0].value=kot.toFixed(2);
+ alert("kot="+kot.toFixed(2));
+ pokaz2.innerHTML="kot="+kot.toFixed(2);
+}
+ </script>
+</head>
+<body>
+Pobliczanie pol i drabinau prostokota
+<br> <br>
+<form name="formularz" action="..." onsubmit="drabina_zaj(this.a_zaj.value,this.b_zaj.value);
+kot_zaj(this.a_zaj.value,this.b_zaj.value);return false">
+Podaj bok 1=
+<input size="6" name="a_zaj">
+Podaj bok 2=
+<input size="6" name="b_zaj">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+drabina=
+<input size="6" name="drabina">
+kot=
+<input size="6" name="kot">
+<input type="button" value="zamknij okno" onclick="okno_zamknij_zaj()"/>
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body>
+</html>
