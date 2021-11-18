@@ -1,0 +1,33 @@
+<html>
+<head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> </head>
+<body>
+<div style="color:red;font-size:15px;">
+ <script language="JavaScript">
+ function okno_zamknij_zaj()
+{
+window.close()
+}
+ var l1_t_zaj=prompt("podaj liczbe 1=","");
+ var A=parseFloat(l1_t_zaj);
+ var l2_t_zaj=prompt("podaj liczbe 2=","");
+ var B=parseFloat(l2_t_zaj);
+ var pocz_zaj=prompt("podaj liczbe poczotkowom=","");
+ var P=parseFloat(pocz_zaj);
+ let tekst_zaj=prompt("podaj tekst=","");
+ if(A<60 && A>20 && B<60 && B>20){
+ if (A<B){
+ for(i=P;i<=100;i+=5)
+ { document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_zaj+"<br></p>");}}
+  if (A>B){
+ for(i=P;i>=0;i-=5)
+ { document.write("<p style=\"font-size:"+i+"px; color: black;\"><br>"+tekst_zaj+"<br></p>");}}
+ }
+ if(A>60 && A<20 && B>60 && B<20){
+ document.write("obie liczby muszo byc miedzy 20 i 60");}
+ </script>
+</div>
+<form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_zaj()"/>
+</form>
+</body>
+</html>

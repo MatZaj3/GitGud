@@ -1,0 +1,37 @@
+<html>
+<head> <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> </head>
+<body>
+<div style="color:red;font-size:15px;">
+ <script language="JavaScript">
+ function okno_zamknij_zaj()
+{
+window.close()
+}
+
+ var x=prompt("podaj liczbę a=","");
+ var A=parseFloat(x);
+ var y=prompt("podaj liczbę b=","");
+ var B=parseFloat(y);
+ for(i=1;i<=A;i++)
+ {
+ document.write("*");}
+  for(n=1;n<=B;n++)
+ {
+ 
+ document.write("<br>" + "*");
+  for(g=1;g<=(A-2);g++)
+ {
+ document.write("&ensp;");}
+ document.write("*");}
+  document.write("<br>");
+  for(k=1;k<=A;k++)
+ {
+ document.write("*");}
+ 
+ </script>
+</div>
+<form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_zaj()"/>
+</form>
+</body>
+</html>
